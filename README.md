@@ -13,3 +13,9 @@ cmake .. && make
  more log1;
  more log2;
  
+Instructions for comparison and debugging purpose:
+1) In the output directory,  just look at the log and output files for comparison and debugging purpose:
+for example,
+sdiff logsynth [your own logsyth file] | more;
+sdiff log1 [your own log1 file] | more;
+sdiff log2 [your own log2 file] | more;
