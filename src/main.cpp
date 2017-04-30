@@ -199,13 +199,7 @@ int main(int argc, char* argv[]) {
       out_file_ << ukf.NIS_laser_ << "\n";
 
 
-    /*float x_estimate_ = ukf.x_(0);
-    float y_estimate_ = ukf.x_(1);
-    float vx_estimate_ = ukf.x_(2);
-    float vy_estimate_ = ukf.x_(3);
-    ukf_x_cartesian_ << x_estimate_, y_estimate_, vx_estimate_, vy_estimate_;
-    std::cout << "Lidar ukf.x_: " << std::endl << ukf.x_ << std::endl;*/
-    } else if (measurement_pack_list[k].sensor_type_ == MeasurementPackage::RADAR) {
+        } else if (measurement_pack_list[k].sensor_type_ == MeasurementPackage::RADAR) {
       out_file_ << ukf.NIS_radar_ << "\n";
     
 
